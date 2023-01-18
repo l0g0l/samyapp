@@ -1,0 +1,24 @@
+.c-header-search {
+  position: fixed;
+  z-index: 1;
+  background: #072146;
+  width: 100%;
+  top: 0;
+}
+
+.c-children__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: var(--spacing-s);
+
+  
+  &--fav {
+    position: relative;
+    top: 16.06rem;
+    display: flex;
+    justify-content: center;
+    margin: var(--spacing-s);
+  }
+}

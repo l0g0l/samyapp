@@ -1,0 +1,35 @@
+//=========== Generics ==============
+
+body {
+  font-family: $mainfont
+}
+
+a {
+  text-decoration: none;
+  color: var(link);
+
+  &:hover {
+    color: var(link-hover);
+    text-decoration: none;
+  }
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

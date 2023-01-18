@@ -1,0 +1,43 @@
+.c-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.87rem 0.93rem 1.87rem;
+
+  &__logo {
+    width: 6.37rem;
+    height: 6.37rem;
+    margin-right: $spacing-6xl;
+  }
+
+  &__icon {
+    width: $spacing-xs;
+  }
+
+  &__input-search {
+    display: flex;
+    align-items: center;
+    padding-left: 0.62rem;
+    width: 16.93rem;
+    height: 1.87rem;
+    border-radius: 1.87rem;
+    background-color: $grey-primary;
+    -webkit-border-radius: 1.87rem;
+    -moz-border-radius: 1.87rem;
+    -ms-border-radius: 1.87rem;
+    -o-border-radius: 1.87rem;
+    color: $black;
+  }
+
+  &__input {
+    background-color: transparent;
+    width: 14rem;
+    padding-left: 0.62rem;
+
+  }
+
+  &__input::-webkit-input-placeholder {
+    font-size: 0.95rem;
+  }
+
+}

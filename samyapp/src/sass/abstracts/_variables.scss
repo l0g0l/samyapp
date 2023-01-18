@@ -1,0 +1,70 @@
+//=========== Fuentes ==============
+
+$mainfont: ubuntu, "Courier New", monospace, sans-serif;
+$font-size-5xs: 0.25rem; // Around 4px @ 1920x1080
+$font-size-4xs: 0.5rem;
+$font-size-3xs: 0.75rem;
+$font-size-2xs: 1rem; // Around 16px @ 1920x1080
+$font-size-xs: 1.25rem;
+$font-size-s: 1.5rem;
+$font-size-m: 1.75rem;
+$font-size-l: 2rem; // Around 32px @ 1920x1080
+$font-size-xl: 2.25rem;
+$font-size-2xl: 2.5rem;
+$font-size-3xl: 2.75rem;
+$font-size-4xl: 3rem; // Around 48px @ 1920x1080
+
+$font-weight-light: 200;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+//=========== Espaciados ===========
+$spacing-5xs: 0.25rem; // Around 4px @ 1920x1080
+$spacing-4xs: 0.5rem;
+$spacing-3xs: 0.75rem;
+$spacing-2xs: 1rem; // Around 16px @ 1920x1080
+$spacing-xs: 1.25rem;
+$spacing-s: 1.5rem;
+$spacing-m: 1.75rem;
+$spacing-l: 2rem; // Around 32px @ 1920x1080
+$spacing-xl: 2.25rem;
+$spacing-2xl: 2.5rem;
+$spacing-3xl: 2.75rem;
+$spacing-4xl: 3rem; // Around 48px @ 1920x1080
+$spacing-5xl: 3.25rem;
+$spacing-6xl: 3.5rem;
+$spacing-7xl: 3.75rem;
+$spacing-8xl: 4rem; // Around 64px @ 1920x1080
+$spacing-9xl: 4.25rem;
+$spacing-10xl: 4.5rem;
+$spacing-11xl: 4.75rem;
+$spacing-12xl: 5rem;
+$spacing-13xl: 5.25rem;
+$spacing-14xl: 5.5rem;
+$spacing-15xl: 5.75rem;
+$spacing-16xl: 6rem;
+$spacing-17xl: 6.25rem;
+$spacing-18xl: 6.5rem;
+$spacing-19xl: 6.75rem;
+$spacing-20xl: 7rem;
+$spacing-21xl: 7.25rem;
+$spacing-22xl: 7.5rem;
+$spacing-23xl: 7.75rem;
+$spacing-24xl: 8rem;
+//=========== Colores ==============
+
+/* HXD */
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+$grey-primary: hsl(0, 4%, 86%);
+$grey-secondary: hsl(0, 1%, 57%);
+$grey-text: hsl(0, 0%, 10%);
+$grey-backg: hsl(0, 0%, 82%);
+$pink: hsl(345, 82%, 49%);
+$pinkcommit: hsl(351, 57%, 80%);
+
+
+//=========== Dimensiones ==============
+$nav: 75px;
+$footer: 50px;
+$margs: 27px;
