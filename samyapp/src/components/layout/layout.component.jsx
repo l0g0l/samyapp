@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { getImages } from "../../services/requests";
 import { Header } from "./header/header.component";
-import { Footer } from "./footer/footer.component";
 import { Card } from "./main/card.component";
 
 export const Layout = () => {
@@ -29,11 +28,7 @@ export const Layout = () => {
                         );
                     })}
                 </ul>
-                ;
             </main>
-            <footer>
-                <Footer />
-            </footer>
         </>
     );
 };
