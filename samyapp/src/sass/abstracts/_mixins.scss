@@ -1,27 +1,3 @@
-//=========== para las ramas ==============
-@mixin branch($height, $top, $left, $boxcolor1, $boxcolor2, $boxcolor3, $boxcolor4) {
-  width: 40px;
-  height: $height;
-  display: block;
-  position: absolute;
-  top: $top;
-  left: $left;
-  box-shadow: $boxcolor1, $boxcolor2, $boxcolor3, $boxcolor4;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-//=========== Para el color de la rama main ==============
-@mixin neon() {
-  background-color: rgb(243, 243, 243);
-  box-shadow:
-    0 0 6px rgb(128, 75, 94),
-    0 0 6px rgb(246, 116, 164),
-    0 0 6px rgb(246, 116, 164),
-    0 0 12px rgb(246, 116, 164);
-}
-
-
 //=========== Breakpoints ==============
 @mixin for-size($size) {
   @if $size ==xsphone {

@@ -1,6 +1,6 @@
 //=========== Fuentes ==============
 
-$mainfont: ubuntu, "Courier New", monospace, sans-serif;
+$mainfont: Print Modern, sans-serif;
 $font-size-5xs: 0.25rem; // Around 4px @ 1920x1080
 $font-size-4xs: 0.5rem;
 $font-size-3xs: 0.75rem;
@@ -56,12 +56,9 @@ $spacing-24xl: 8rem;
 /* HXD */
 $black: hsl(0, 0%, 0%);
 $white: hsl(0, 0%, 100%);
-$grey-primary: hsl(0, 4%, 86%);
-$grey-secondary: hsl(0, 1%, 57%);
-$grey-text: hsl(0, 0%, 10%);
-$grey-backg: hsl(0, 0%, 82%);
-$pink: hsl(345, 82%, 49%);
-$pinkcommit: hsl(351, 57%, 80%);
+$grey-primary: hsl(0, 12%, 95%);
+$grey-secondary: hsl(0, 4%, 78%);
+
 
 
 //=========== Dimensiones ==============
