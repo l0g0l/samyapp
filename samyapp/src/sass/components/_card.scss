@@ -6,6 +6,27 @@
     border-top: 0.06rem solid $grey-secondary;
     border-right: 0.06rem solid $grey-secondary;
 
+    &__price {
+        position: absolute;
+        width: 10.06rem;
+        height: 6.31rem;
+        border-left: 10.12rem solid $white;
+        border-bottom: $spacing-17xl solid transparent;
+
+        &--amount {
+            position: absolute;
+            top: 1.37rem;
+            right: $spacing-14xl;
+            display: flex;
+        }
+
+        & sub {
+            top: 0.62rem;
+            margin-left: $spacing-5xs;
+
+        }
+    }
+
     &__img {
         width: 100%;
         max-height: 22.56rem;

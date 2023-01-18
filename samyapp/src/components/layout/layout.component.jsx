@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getImages } from "../../services/requests";
+import { getImages, postLikes } from "../../services/requests";
 import { Header } from "./header/header.component";
 import { Card } from "./main/card.component";
 
@@ -8,6 +8,7 @@ export const Layout = () => {
 
     useEffect(() => {
         getImages().then((res) => {
+            console.log(res);
             return setImagesResult(res);
         });
     }, []);

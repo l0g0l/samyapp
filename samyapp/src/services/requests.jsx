@@ -10,14 +10,21 @@ export const getImages = async () => {
     }
 };
 
+const options = {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json; charset=utf-8",
+    },
+    body: JSON.stringify(""),
+};
 export const postLikes = async (id) => {
     try {
         const likes_res = await fetch(
-            `http://localhost:3100/images/${id}/likes`
+            `http://localhost:3100/images/${id}/likes`,
+            options
         );
-
         const likes_json = await likes_res.json();
-
+        console.log(likes_json);
         return likes_json;
     } catch (error) {
         console.log(error);
