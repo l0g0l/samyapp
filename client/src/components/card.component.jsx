@@ -5,8 +5,8 @@ import dislike from "../assets/img/dislike.png";
 import recargar from "../assets/img/recargar.png";
 
 export const Card = ({ imagesresult }) => {
-    const [countedLikes, setCountedLikes] = useState(0);
-    const [countedDisLikes, setCountedDisLikes] = useState(0);
+    const [countedLikes, setCountedLikes] = useState(imagesresult.likes_count);
+    const [countedDisLikes] = useState("000");
     const [isEmpty, setIsEmpty] = useState(true);
 
     useEffect(() => {
@@ -67,12 +67,7 @@ export const Card = ({ imagesresult }) => {
                     </button>
                 </div>
                 <div className="c-card__counter-dislikes">
-                    <button
-                        onClick={() => {
-                            setCountedLikes(countedLikes - 1);
-                            setCountedDisLikes(countedDisLikes + 1);
-                        }}
-                    >
+                    <button>
                         <img
                             src={recargar}
                             alt="recharged icon"

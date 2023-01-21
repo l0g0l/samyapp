@@ -1,0 +1,15 @@
+.c-scroll {
+    position: absolute;
+    top: 32rem;
+    right: 2.6rem;
+    background-color: transparent;
+}
+
+#arrowfixed {
+    background-color: transparent;
+    position: fixed;
+
+    .c-scroll__img {
+        width: $spacing-2xl;
+    }
+}

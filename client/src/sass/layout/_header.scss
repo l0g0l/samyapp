@@ -4,6 +4,10 @@
   align-items: center;
   padding: 2.5rem 1.87rem 0.93rem 1.87rem;
 
+  @include for-tablet-landscape-up {
+    justify-content: space-between;
+  }
+
   &__logo {
     width: 6.37rem;
     height: 6.37rem;

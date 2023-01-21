@@ -6,6 +6,8 @@
     border-top: 0.06rem solid $grey-secondary;
     border-right: 0.06rem solid $grey-secondary;
 
+
+
     &__price {
         position: absolute;
         width: 10.06rem;
@@ -23,7 +25,6 @@
         & sub {
             top: 0.62rem;
             margin-left: $spacing-5xs;
-
         }
     }
 
@@ -44,7 +45,6 @@
             margin-top: $spacing-s;
             margin-bottom: 0.30rem;
             font-size: 1.87rem;
-
         }
 
         &--subtitle1 {

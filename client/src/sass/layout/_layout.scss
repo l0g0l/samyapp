@@ -2,4 +2,9 @@
   background-color: $grey-primary;
   padding: $spacing-8xl $spacing-4xl;
 
+  @include for-tablet-landscape-up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
 }

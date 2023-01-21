@@ -5,7 +5,6 @@ export const getImages = async (value) => {
         );
 
         const images_json = await images_res.json();
-
         return images_json;
     } catch (error) {
         console.log(error);
@@ -24,6 +23,7 @@ export const postLikes = async (id) => {
             `http://localhost:3100/images/${id}/likes`,
             options
         );
+
         if (likes_res.status === 204) {
             return true;
         } else {
