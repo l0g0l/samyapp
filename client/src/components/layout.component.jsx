@@ -23,7 +23,7 @@ export const Layout = () => {
 
             <main className="c-children">
                 <ScrollToTop />
-                <ul>
+                <ul className="c-children__list-container">
                     {imagesResult.map((card) => {
                         return (
                             <li key={card.id}>

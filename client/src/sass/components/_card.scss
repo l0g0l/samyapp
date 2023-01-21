@@ -1,12 +1,9 @@
 .c-card {
     width: 100%;
-    max-width: 32.56rem;
     margin-bottom: $spacing-xs;
     border-left: 0.06rem solid $grey-secondary;
     border-top: 0.06rem solid $grey-secondary;
     border-right: 0.06rem solid $grey-secondary;
-
-
 
     &__price {
         position: absolute;
