@@ -1,6 +1,9 @@
-export const getImages = async () => {
+export const getImages = async (value) => {
     try {
-        const images_res = await fetch("http://localhost:3100/images");
+        const images_res = await fetch(
+            `http://localhost:3100/images`
+            // `http://localhost:3100/images?search=${value}`
+        );
 
         const images_json = await images_res.json();
 

@@ -1,7 +1,12 @@
-import lupa from "../../../assets/img/lupa.png";
-import logo from "../../../assets/img/logo.png";
+import lupa from "../assets/img/lupa.png";
+import logo from "../assets/img/logo.png";
 
-export const Header = () => {
+export const Header = ({ value, setvalue }) => {
+    const userInputValue = (e) => {
+        const getInputValue = e.target.value.toLocaleLowerCase();
+        setvalue(getInputValue);
+    };
+
     return (
         <div className="c-header" role="banner">
             <div>
@@ -14,6 +19,11 @@ export const Header = () => {
                     className="c-header__icon"
                 />
                 <input
+                    data-cy="inputsearch"
+                    type="search"
+                    value={value}
+                    tabIndex={0}
+                    onChange={userInputValue}
                     className="c-header__input"
                     placeholder="You're looking for something?"
                 ></input>

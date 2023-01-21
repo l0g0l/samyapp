@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { postLikes } from "../../../services/requests";
-import like from "../../../assets/img/like.png";
-import dislike from "../../../assets/img/dislike.png";
-import recargar from "../../../assets/img/recargar.png";
+import { postLikes } from "../services/requests";
+import like from "../assets/img/like.png";
+import dislike from "../assets/img/dislike.png";
+import recargar from "../assets/img/recargar.png";
 
 export const Card = ({ imagesresult }) => {
     const [countedLikes, setCountedLikes] = useState(0);
