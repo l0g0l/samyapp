@@ -47,10 +47,7 @@ export const Card = ({ imagesresult }) => {
                     <div>{countedLikes}</div>
                     <button
                         onClick={() => {
-                            postLikes(imagesresult.id).then((res) => {
-                                console.log(res);
-                                return res;
-                            });
+                            postLikes(imagesresult.id);
                             setCountedLikes(countedLikes + 1);
                         }}
                     >

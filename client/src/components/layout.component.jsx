@@ -12,7 +12,7 @@ export const Layout = () => {
             console.log(res);
             return setImagesResult(res);
         });
-    }, []); // de momento no le he puesto la dependdecia de value para ver todas las imágenes cargadas desde el principio
+    }, [value]);
 
     return (
         <>
