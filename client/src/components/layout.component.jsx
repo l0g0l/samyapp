@@ -17,13 +17,14 @@ export const Layout = () => {
 
     return (
         <>
-            <header>
+            <header data-cy="header">
                 <Header value={value} setvalue={setValue} />
             </header>
 
             <main className="c-children">
                 <ScrollToTop />
-                <ul className="c-children__list-container">
+
+                <ul className="c-children__list-container" data-cy="cardlist">
                     {imagesResult.map((card) => {
                         return (
                             <li key={card.id}>

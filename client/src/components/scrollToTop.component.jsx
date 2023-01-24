@@ -23,7 +23,7 @@ export const ScrollToTop = () => {
     }, []);
 
     return (
-        <div className="c-scroll" aria-label="Click">
+        <div className="c-scroll" aria-label="Click" data-cy="scrolltotop">
             {isVisible && (
                 <div
                     aria-label="Up to Top"

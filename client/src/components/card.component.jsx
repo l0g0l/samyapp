@@ -17,23 +17,30 @@ export const Card = ({ imagesresult }) => {
 
     return (
         <div className="c-card">
-            <div className="c-card__price">
-                <div className="c-card__price--amount">
+            <div className="c-card__price" data-cy="price">
+                <div className="c-card__price--amount" data-cy="amount">
                     <span>{imagesresult.price.toFixed(2)}</span>
                     <sub>€</sub>
                 </div>
             </div>
             <img
+                data-cy="photo"
                 src={imagesresult.main_attachment.small}
                 alt={imagesresult.title}
                 className="c-card__img"
             />
             <div className="c-card__title-container">
-                <span className="c-card__title-container--title">
+                <span
+                    data-cy="title"
+                    className="c-card__title-container--title"
+                >
                     {imagesresult.title}
                 </span>
                 <div>
-                    <span className="c-card__title-container--subtitle1">
+                    <span
+                        data-cy="subtitle"
+                        className="c-card__title-container--subtitle1"
+                    >
                         by{" "}
                     </span>
                     <span className="c-card__title-container--subtitle2">
@@ -42,10 +49,11 @@ export const Card = ({ imagesresult }) => {
                 </div>
             </div>
 
-            <footer className="c-card__footer">
+            <footer className="c-card__footer" data-cy="footer">
                 <div className="c-card__counter-likes">
-                    <div>{countedLikes}</div>
+                    <div data-cy="counterlikes">{countedLikes}</div>
                     <button
+                        data-cy="btnlike"
                         onClick={() => {
                             postLikes(imagesresult.id);
                             setCountedLikes(countedLikes + 1);
@@ -53,12 +61,14 @@ export const Card = ({ imagesresult }) => {
                     >
                         {isEmpty ? (
                             <img
+                                data-cy="likeicon"
                                 src={dislike}
                                 alt="like icon"
                                 className="c-card__counter-likes--icon"
                             />
                         ) : (
                             <img
+                                data-cy="dislikeicon"
                                 src={like}
                                 alt="dislike icon"
                                 className="c-card__counter-likes--icon"
@@ -67,8 +77,9 @@ export const Card = ({ imagesresult }) => {
                     </button>
                 </div>
                 <div className="c-card__counter-dislikes">
-                    <button>
+                    <button data-cy="btndislike">
                         <img
+                            data-cy="rechargedicon"
                             src={recargar}
                             alt="recharged icon"
                             className="c-card__counter-dislikes--icon"

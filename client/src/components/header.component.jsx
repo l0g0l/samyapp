@@ -10,16 +10,20 @@ export const Header = ({ value, setvalue }) => {
     return (
         <div className="c-header" role="banner">
             <div>
-                <img src={logo} alt="logo icon" className="c-header__logo" />
+                <img
+                    src={logo}
+                    alt="logo icon"
+                    className="c-header__logo"
+                    data-cy="logo"
+                />
             </div>
-            <div className="c-header__input-search">
+            <div className="c-header__input-search" data-cy="inputsearch">
                 <img
                     src={lupa}
                     alt="magnifier icon"
                     className="c-header__icon"
                 />
                 <input
-                    data-cy="inputsearch"
                     type="search"
                     value={value}
                     tabIndex={0}
