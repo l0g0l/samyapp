@@ -1,77 +1,140 @@
-# Requerimientos
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+<h4 align="center">SAMY App</h4>
+  <p align="center">
+    <a href="https://github.com/l0g0l/samyapp">View Web Application</a>
+  </p>
+  <p align="center">
+<img src="https://www.codefactor.io/repository/github/l0g0l/samyapp/badge/main" alt="Codefactor Grade">
+</p>
 
-Necesitamos desarrollar una Single Page Application (SPA) que muestre la información de nuestras imagenes:
-  1. Mostrar todas las imagenes con un scroll infinito.
-  2. Filtrar el contenido a través de una búsqueda (No es necesario que el resultado sea coherente).
-  3. Realizar un like/unlike de cada uno de los items. UI responsive.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#learn-more">Frameworks and Libraries</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#app-overview">App Overview</a></li>
+    <li><a href="#languages-and-tools">Languages and Tools</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-# Información
+## Frameworks and Libraries
 
-En el momento del desarrollo de la aplicación cliente, el API no se encuentra desarrollada, por
-lo que esta incluida una api mock que simula el comportamiento de la API.
+To be more familiar with the libraries and frameworks I have mainly used I will leave a short explanation here:
 
-Para arrancar la api mock simplemente ejecutar:
+### [Sass](https://sass-lang.com/)
 
-`npm run mocks`
+npm i sass
 
-## Endpoints
+Chart.js is an free JavaScript library for making HTML-based charts. It is one of the simplest visualization libraries for JavaScript, and comes with many built-in chart types.
 
-### `GET http://localhost:3100/images`
-```json
-[
-  {
-    "type": "Image",
-    "id": 2,
-    "title": "Train in India-Agra",
-    "author": "SamyRoad",
-    "created_at": "2012-12-12T21: 08: 20Z",
-    "main_attachment": {
-      "big": "http://lorempixel.com/400/500/",
-      "small": "http://lorempixel.com/100/125/"
-    },
-    "likes_count": 5,
-    "liked": true,
-    "links": [
-      {
-        "rel": "avatar",
-        "uri": "http://lorempixel.com/250/250/",
-        "methods": "GET"
-      },
-      {
-        "rel": "like",
-        "uri": "http://localhost:3100/images/2/likes",
-        "methods": "POST"
-      }
-    ]
-  },
-  ...
-]
+### [Cypress](https://www.cypress.io/)
+
+npm install cypress
+
+Cypress is a Javascript end-to-end testing tool. It allows to check that the performance of a newly developed software product is good and corresponds to the initial requirements, using automation.
+
+### Prerequisites
+
+-   [Node js](https://nodejs.org/en//) v12.22
+-   [React js](https://es.reactjs.org/)
+-   Clone the repository on your local machine (https://github.com/l0g0l/samyapp.git)
+
+## Installation
+
+###### Frontend
+
+```sh
+`cd samyapp` go into the folder
 ```
 
-Se puede utilizar los query params `search` y `page` para simular la busqueda y paginación.
+###### Install dependecies and devDependencies
 
+```sh
+npm i
+```
 
-### `POST http://localhost:3100/images/:id/likes`
+###### Enter the following command
 
-Espera un body vacio y respondera con un 204 si todo ha ido correctamente, simula la acción de like.
+```sh
+npm run mocks
+```
 
-# Diseño
+```sh
+`cd client`
+```
 
-La visualización de la aplicación cambia dependiendo del dispositivo que se este utilizando.
-- En el caso de que se utilice un dispositivo móvil, se debe de mostrar la aplicación siguiendo el diseño mobile.psd.
-- En el caso que se utilice una pantalla mayor, se debe de utilizar el diseño web.psd, con un mínimo de 2 columnas y un máximo de 4.
+```sh
+npm start
+```
 
-Los diseños se pueden encontrar [aqui](https://www.dropbox.com/sh/r1fp5nz7x046kjt/AACQdbp6bZlv2pNtCN2lTEoEa?dl=0).
+###### Testing Cypress.io
 
-Si no dispones de photoshop puedes usar [photopea](https://www.photopea.com/).
+```sh
+npx cypress open / E2E Testing / Chrome / Specs
+```
 
-# Implementación
+<!-- ABOUT THE PROJECT -->
 
-- Diseñar e implementar la aplicación usando preferiblemente React.
-- HTML y estilos responsive a partir de los PSDs: mobile para móviles y web para Desktop.
+## About The Project
 
-Se valorarán los siguientes puntos:
-- Tests de la aplicación.
-- Usar “BEM methodology”.
-- El uso de algún “package manager”.
-- El uso de algún “task manager”.
+Creation of an application to show a photos catalogue
+
+### Requirements
+
+We need to develop a Single Page Application (SPA) that shows the information of our images:
+
+1. Show all the images with an infinite scroll.
+2. Filter the content through a search (It is not necessary that the result is coherent).
+3. Perform a like/unlike of each of the items. Responsive UI.
+
+##### Goals required:
+
+-   Application testing.
+-   Using "BEM methodology".
+-   The use of a package manager.
+
+<!-- APP OVERVIEW -->
+
+## App Overview
+
+<img src="src/assets/img/samyapp.gif" alt="view mobile size " width="400">
+
+<br>
+<br>
+<br>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## Languages and Tools:
+
+<p align="left">
+   <a href="https://reactjs.org/" target="_blank">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
+    </a> 
+     &nbsp; &nbsp;
+      <a href="https://sass-lang.com/" target="_blank"> 
+        <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="SASS" width="40" height="40"/>
+         &nbsp; &nbsp;
+      <a href="https://git-scm.com/" target="_blank">
+        <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40" margin-left="30px"/>
+    </a> 
+      <a href="https://www.cypress.io/" target="_blank">
+      <img src="./public/assets/img/cypress.png" alt="cypress" width="150" height="40"/>
+    </a>
+ </p>
+
+<!-- CONTACT -->
+
+## Contact
+
+Lucía González
+
+[<img src="https://github.com/l0g0l/hackathonmwc/raw/main/src/images/GitHub.png" width=45px heigth=45px>](https://github.com/l0g0l)
+
+[<img src="https://github.com/l0g0l/hackathonmwc/raw/main/src/images/linkedin.png"  width=40px heigth=40px>](https://www.linkedin.com/in/luciagonzalezlara)
