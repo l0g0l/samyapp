@@ -103,7 +103,7 @@ We need to develop a Single Page Application (SPA) that shows the information of
 
 ## App Overview
 
-<img src="src/assets/img/samyapp.gif" alt="view mobile size " width="400">
+<img src="client/src/assets/img/samyapp.gif" alt="view mobile size " width="400">
 
 <br>
 <br>
@@ -125,7 +125,7 @@ We need to develop a Single Page Application (SPA) that shows the information of
         <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40" margin-left="30px"/>
     </a> 
       <a href="https://www.cypress.io/" target="_blank">
-      <img src="./public/assets/img/cypress.png" alt="cypress" width="150" height="40"/>
+      <img src="client/src/assets/img/cypress.png" alt="cypress" width="150" height="40"/>
     </a>
  </p>
 
